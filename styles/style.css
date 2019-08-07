@@ -17,7 +17,31 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+  }
+  .menu-toggle input {
+
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 30;
+    z-index: 1000;
+  }
+
+    .menu-toggle span {
+
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #eae5d6;
+    border-radius: 3px;
+    z-index: 20;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s, background 0.5s, opacity 0.55s ease;}
 
 img {
   width: 100%;
@@ -430,6 +454,18 @@ img {
       color: #ffffff;
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
+    }
+
+    .footer-links a:hover {
+      color: #1d0303
+    }
+
+    .footer-links a:visited {
+      color: #1d0303;
+    }
+
+    .footer-links a:active {
+     background: #eee;
     }
 
     .stay-updated-section {
