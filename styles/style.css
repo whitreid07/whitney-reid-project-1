@@ -6,10 +6,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-/* h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-} */
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 img {
   width: 100%;
   display: block;
@@ -37,7 +46,6 @@ img {
     margin: 0 auto;
     width: 85%;
     height: 100%;
-    border: 2px dotted red;
   }
 
   .wrapper2 {
@@ -45,11 +53,6 @@ img {
     margin: 0 auto;
     width: 86%;
     height: 100%;
-    border: 2px dotted red;
-  }
-
-  .wrapper3 {
-    border: 2px solid coral;
   }
 
   h2 {
@@ -277,8 +280,6 @@ img {
     margin: 0 auto;
     width: 75%;
     height: 100%;
-    border: 2px dotted red;
-
   }
 
   .section3 {
@@ -609,12 +610,6 @@ img {
     width: 270px;
     height: 270px;
     float: left;
-    }
-
-  .footer-links {
-    float: left;
-    width: 100%;
-    border: 2px dotted black;
   }
 
   .footer-links ul {
@@ -624,7 +619,6 @@ img {
   .stay-updated-section {
     float: left;
     width: 100%;
-    border: 2px dotted black;
   }
 
   .subscribe-section span {
@@ -640,7 +634,6 @@ img {
 
   .contact-section {
     float: left;
-    border: 2px dotted black;
     white-space: nowrap;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -648,7 +641,6 @@ img {
   }
   .footer-links {
     float: left;
-    border: 2px dotted black;
     width: 100%;
   }
 
@@ -727,7 +719,6 @@ img {
     width: 100%;
     float: left;
     height: 30vh;
-    border: 2px solid coral;
     margin: 0;
   }
 
@@ -852,7 +843,6 @@ img {
   .header-title {
     float: none;
     width: 40%;
-    border: 2px solid coral;
     font-family: 'Petit Formal Script', cursive;
     padding-top: 11%;
     position: relative;
@@ -885,6 +875,15 @@ img {
     margin-bottom: 2%;
     font-weight: 300;
     line-height: 1.45;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-links li {
+    float: left;
+    padding-left: 12%;
   }
   
 }
@@ -927,7 +926,7 @@ img {
   .header-title h1 {
     text-align: right;
     color: #ffff;
-    line-height: 4.3rem;
+    line-height: 3rem;
     font-size: 2.5rem;
   }
   .section6 {
@@ -941,13 +940,6 @@ img {
   .section-content {
     height: 50vh;
   }
-
-  /* .section2 h2 {
-    text-align: center;
-    margin: 3% 0;
-    font-size: 1.6rem;
-    font-weight: 300;
-  } */
 
   .section2-image-container ul {
     padding-bottom: 10%;
@@ -1037,5 +1029,51 @@ img {
     text-align: center;
     font-weight: 300;
     font-size: 1.7rem;
+  }
+  .footer-links a {
+    font-size: 1rem;
+  }
+
+  .section-content p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    margin-top: 2%;
+    font-weight: 300;
+  }
+  .footer-links li {
+    float: left;
+    padding-left: 5%;
+  }
+
+  .stay-updated-section h2,
+  .contact-section h3 {
+    margin-top: 5%;
+    font-size: 1.8rem;
+    font-weight: 300;
+  } 
+  input {
+    width: 76%;
+    padding: 1.5%;
+  }
+  .stay-updated-section p {
+    font-size: 0.7rem;
+  }
+  .subscribe-section {
+    position: relative;
+  }
+  .contact-section p {
+    font-size: 0.8rem;
+  }
+  .subscribe-section button {
+    padding: 5%;
+  }
+
+  .footer-copyright p {
+    color: #ffffff;
+    text-align: center;
+    padding: 5%;
+    font-size: 0.8rem;
   }
 }
