@@ -308,7 +308,7 @@ img {
   .fall-trends-container {
     padding-left: 7%;
   }
-
+  
   .fall-trends-container h2 {
     margin-top: 17%;
   }
@@ -575,13 +575,31 @@ img {
   .hand-crafted-image {
     width: 100%;
     height: 100%;
-    float: left;
+    float: none;
   }
+
+  .section1-icons {
+    right: -35px;
+    bottom: 22px;
+  }
+
   .section1 h2 {
     font-family: 'Petit Formal Script', cursive;
     color: #ffff;
     font-size: 1.3rem;
   }
+
+  .section-content {
+    width: 100%;
+    float: none;
+    height: 30vh;
+    margin: 0;
+    margin-top: 5%;
+  }
+
+  .section1 h2 {
+    font-size: 1.8rem;
+}
   
   .section-content p {
     color: #ffffff;
@@ -590,7 +608,14 @@ img {
     letter-spacing: 0.2px;
     margin-top: 2%;
     font-weight: 300;
+  }
 
+  .section3 i {
+    width: 33%;
+    float: left;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
   }
 
   .footer-links {
@@ -664,7 +689,6 @@ img {
   .header-title {
     float: none;
     width: 40%;
-    height: 43vh;
     border: 2px solid coral;
     font-family: 'Petit Formal Script', cursive;
     padding-top: 15%;
@@ -682,4 +706,61 @@ img {
     float: none;
     border: 2px solid purple;
   }
+
+  .section1-image {
+    width: 85%;
+    height: 85%;
+    border: 2px solid coral;
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .section-content {
+    height: 35vh;
+  }
+  
+  .section3 i {
+    width: 100%;
+    float: none;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .section4 {
+    background: #815600;
+    position: relative;
+  }
+
+  .fall-trends-container {
+    width: 100%;
+    height: 60vh;
+    /* position: absolute; */
+  }
+
+  .fall-trends-image-container {
+    float: none;
+    width: 100%;
+    position: absolute;
+  }
+
+  .fall-trends-image-container img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .fall-trends-inner-container {
+      position: relative;
+      top: 59%;
+  }
+
+  vegan-leather-container, .vegan-leather-image-container {
+    width: 100%;
+    height: 60vh;
+  }
+
+  
 }
