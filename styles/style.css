@@ -757,17 +757,19 @@ img {
       top: 59%;
   }
 
+
   .vegan-leather-container {
     width: 100%;
     height: 60vh;
-    /* position: absolute; */
+    position: relative;
+    top: 325px;
   }
 
   .vegan-leather-image-container {
     float: none;
     width: 100%;
     position: relative;
-    bottom: 111px;
+    bottom: 300px;
   }
 
   .vegan-leather-image-container img {
@@ -782,12 +784,19 @@ img {
   }
   
 
+
+
+
+
+  
+  
+
   .section6 {
     background: #500801;
     padding-top: 3%;
     padding-bottom: 3%;
     position: relative;
-    margin-top: 50%;  
+    margin-top: 100%;  
   }
   
 }
