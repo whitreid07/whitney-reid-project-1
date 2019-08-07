@@ -743,12 +743,13 @@ img {
     height: 35vh;
   }
 
-  .section1 h2 {
-    font-size: 1.6rem;
+  .section2 h2 {
+    font-size: 2rem;
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
   }
+  
   
   .section3 i {
     width: 100%;
@@ -930,7 +931,6 @@ img {
     font-size: 2.5rem;
   }
   .section6 {
-
     background: #500801;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -944,8 +944,9 @@ img {
 
   /* .section2 h2 {
     text-align: center;
-    margin: 11% 0;
-    font-size: 1.5rem;
+    margin: 3% 0;
+    font-size: 1.6rem;
+    font-weight: 300;
   } */
 
   .section2-image-container ul {
@@ -992,9 +993,18 @@ img {
     position: relative;
     margin-top: 130%;
   }
+
+  
 }
 
 @media only screen and (max-width: 387px) {
+
+  .section2 h2 {
+    text-align: center;
+    margin: 5% 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
 
   .section6 {
     background: #500801;
