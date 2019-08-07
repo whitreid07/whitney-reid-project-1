@@ -177,9 +177,9 @@ img {
   /* section1 */
 
   .section1 {
-    height: 34vw;
     background: #500801;
     padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .hand-crafted-image {
@@ -561,6 +561,10 @@ img {
 /* Media Query Smaller Computer View */
 @media only screen and (max-width: 1222px) {
 
+  .section1 {
+    background: #500801;
+    padding-top: 5%;
+  }
   .header-title h1 {
     text-align: right;
     color: #ffff;
@@ -569,19 +573,19 @@ img {
   }
 
   .hand-crafted-image {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     float: left;
   }
   .section1 h2 {
     font-family: 'Petit Formal Script', cursive;
     color: #ffff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .section-content p {
     color: #ffffff;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.45;
     letter-spacing: 0.2px;
     margin-top: 2%;
@@ -651,4 +655,31 @@ img {
     color: #ffffff;
   }
 
+}
+
+@media only screen and (max-width: 975px) {
+  header-container {
+    clear: none;
+  }
+  .header-title {
+    float: none;
+    width: 40%;
+    height: 43vh;
+    border: 2px solid coral;
+    font-family: 'Petit Formal Script', cursive;
+    padding-top: 15%;
+  }
+
+  .header-title h1 {
+    text-align: right;
+    color: #ffff;
+    line-height: 3.3rem;
+    font-size: 2.8rem;
+  }
+
+  .header-image {
+    width: 60%;
+    float: none;
+    border: 2px solid purple;
+  }
 }
