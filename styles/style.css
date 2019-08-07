@@ -902,7 +902,8 @@ img {
   .fall-trends-container h2 {
     margin-top: 11%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
   }
   .vegan-leather-container p {
     font-size: 1rem;
@@ -941,11 +942,11 @@ img {
     height: 50vh;
   }
 
-  .section2 h2 {
+  /* .section2 h2 {
     text-align: center;
     margin: 11% 0;
     font-size: 1.5rem;
-  }
+  } */
 
   .section2-image-container ul {
     padding-bottom: 10%;
@@ -983,12 +984,48 @@ img {
   }
 }
 
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 461px) {
   .section6 {
     background: #500801;
     padding-top: 3%;
     padding-bottom: 3%;
     position: relative;
     margin-top: 130%;
+  }
+}
+
+@media only screen and (max-width: 387px) {
+
+  .section6 {
+    background: #500801;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    margin-top: 111%;
+  }
+  .vegan-leather-inner-container {
+    position: relative;
+    top: 50%;
+  }
+
+  .vegan-leather-container p,
+  .fall-trends-container p {
+    font-size: 0.8rem;
+    padding-top: 5%;
+  }
+
+  .vegan-leather-image-container {
+    float: none;
+    width: 100%;
+    position: relative;
+    bottom: 383px;
+  }
+
+  .vegan-leather-container h2, 
+  .fall-trends-image-container h2 {
+    margin-top: 11%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.7rem;
   }
 }
