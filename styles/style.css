@@ -29,6 +29,7 @@ img {
   body {
     background-color: #815600;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
 
   .wrapper {
@@ -36,7 +37,7 @@ img {
     margin: 0 auto;
     width: 85%;
     height: 100%;
-    /* border: 2px dotted red; */
+    border: 2px dotted red;
   }
 
   .wrapper2 {
@@ -45,6 +46,10 @@ img {
     width: 86%;
     height: 100%;
     border: 2px dotted red;
+  }
+
+  .wrapper3 {
+    border: 2px solid coral;
   }
 
   h2 {
@@ -56,6 +61,7 @@ img {
   button {
     background: #1d0303;
     border:  #1d0303;
+    color: #ffffff;
     margin-top: 4%;
     padding: 1.5% 4% ;
     font-family: 'Petit Formal Script', cursive;
@@ -318,6 +324,7 @@ img {
     margin: 5% 20% 0 0;
     margin-bottom: 2%;
     font-weight: 300;
+    line-height: 1.45;
   }
 
    .fall-trends-image-container img {
@@ -367,6 +374,7 @@ img {
     margin: 5% 20% 0 0;
     margin-bottom: 2%;
     font-weight: 300;
+    line-height: 1.45;
   }
 
    .vegan-leather-image-container img {
@@ -537,28 +545,6 @@ img {
 }
 
 /* Media Query Smaller Computer View */
-/* @media only screen and (max-width: 1415px) {
- .footer-links{
-    float: left;
-    width: 5%;
-    }
-
-    .stay-updated-section {
-      float: left;
-      border: 2px dotted black;
-      width: 65%;
-    }
-
-    .contact-section {
-      float: left;
-      border: 2px dotted black;
-      width: 30%;
-      white-space: nowrap;
-      padding-top: 5%;
-    }
-} */
-
-/* Media Query Smaller Computer View */
 @media only screen and (max-width: 1222px) {
 
   .section1 {
@@ -682,39 +668,17 @@ img {
 
 }
 
-@media only screen and (max-width: 975px) {
-  header-container {
-    clear: none;
-  }
-  .header-title {
-    float: none;
-    width: 40%;
-    border: 2px solid coral;
-    font-family: 'Petit Formal Script', cursive;
-    padding-top: 15%;
-  }
-
+@media only screen and (max-width: 970px) {
+  
   .header-title h1 {
     text-align: right;
     color: #ffff;
-    line-height: 3.3rem;
-    font-size: 2.8rem;
-  }
-
-  .header-image {
-    width: 60%;
-    float: none;
-    border: 2px solid purple;
-  }
-
-  .section1-image {
-    width: 85%;
-    height: 85%;
-    border: 2px solid coral;
+    line-height: 3rem;
+    font-size: 2.2rem;
   }
 }
 
-@media only screen and (max-width: 752px) {
+@media only screen and (max-width: 940px) {
   .section-content {
     height: 35vh;
   }
@@ -746,6 +710,11 @@ img {
     position: absolute;
   }
 
+  .fall-trends-container h2 {
+    margin-top: 17%;
+    text-align: center;
+  }
+
   .fall-trends-image-container img {
     width: 100%;
     height: 50%;
@@ -755,6 +724,10 @@ img {
   .fall-trends-inner-container {
       position: relative;
       top: 59%;
+  }
+
+  .fall-trends-container button {
+    margin: 5% 30%;
   }
 
 
@@ -782,21 +755,62 @@ img {
       position: relative;
       top: 59%;
   }
-  
 
+  .vegan-leather-container h2 {
+    margin-top: 17%;
+    text-align: center;
+  }
 
-
-
-
-  
-  
+  .vegan-leather-container button {
+    margin: 5% 30%;
+  }
 
   .section6 {
     background: #500801;
     padding-top: 3%;
     padding-bottom: 3%;
     position: relative;
-    margin-top: 100%;  
+    margin-top: 80%;  
   }
   
 }
+
+
+
+@media only screen and (max-width: 754px) {
+.section1-icons {
+    display: none;
+  }
+  header-container {
+    clear: none;
+  }
+  .header-title {
+    float: none;
+    width: 40%;
+    border: 2px solid coral;
+    font-family: 'Petit Formal Script', cursive;
+    padding-top: 5%;
+    position: relative;
+    left: 74px;
+    width: 92%;
+  }
+
+  .header-title h1 {
+    text-align: right;
+    color: #ffff;
+    line-height: 4.3rem;
+    font-size: 3.5rem;
+  }
+
+  .header-image {
+    width: 60%;
+    float: none;
+  }
+
+  .section1-image {
+    width: 188%;
+    height: 85%;
+    margin-left: -38%;
+  }
+}
+
