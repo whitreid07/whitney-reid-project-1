@@ -63,7 +63,7 @@ img {
     border:  #1d0303;
     color: #ffffff;
     margin-top: 4%;
-    padding: 1.5% 4% ;
+    padding: 1.5% 4% ; 
     font-family: 'Petit Formal Script', cursive;
   }
 
@@ -224,10 +224,12 @@ img {
   }
 
   .section-content button p {
-    color:#ffffff;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 1.25rem;
+    background: #1d0303;
+    border:  #1d0303;
+    color: #ffffff;
+    margin-top: 4%;
+    padding: 1.5% 4% ; 
+    font-family: 'Petit Formal Script', cursive;
   }
 
   button:hover{
@@ -388,6 +390,12 @@ img {
     background: #1d0303;
     color: #ffff;
     font-size: 1.25rem;
+  }
+
+  .fall-trends-container button p,
+  .vegan-leather-container button p {
+    white-space: nowrap;
+
   }
 
   .vegan-leather-container button:hover {
@@ -558,11 +566,6 @@ img {
     font-size: 2.8rem;
   }
 
-  .hand-crafted-image {
-    width: 100%;
-    height: 100%;
-    float: none;
-  }
 
   .section1-icons {
     right: -35px;
@@ -575,23 +578,15 @@ img {
     font-size: 1.3rem;
   }
 
-  .section-content {
-    width: 100%;
-    float: none;
-    height: 30vh;
-    margin: 0;
-    margin-top: 5%;
-  }
-
   .section1 h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
   
   .section-content p {
     color: #ffffff;
     font-size: 0.8rem;
-    line-height: 1.45;
-    letter-spacing: 0.2px;
+    line-height: 1.2;
+    letter-spacing: 1px;
     margin-top: 2%;
     font-weight: 300;
   }
@@ -604,13 +599,26 @@ img {
     color: #ffffff;
   }
 
+  .section1 {
+    background: #500801;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+  .hand-crafted-image {
+    width: 270px;
+    height: 270px;
+    float: left;
+    }
+
   .footer-links {
     float: left;
-    border: 2px dotted black;
-    padding-top: 8%;
     width: 100%;
-    margin: 0 auto;
+    border: 2px dotted black;
+  }
 
+  .footer-links ul {
+    margin: 0;
   }
 
   .stay-updated-section {
@@ -635,12 +643,13 @@ img {
     border: 2px dotted black;
     white-space: nowrap;
     padding-top: 5%;
+    padding-bottom: 5%;
     width: 100%;
   }
-
   .footer-links {
-    margin: 0;
-    padding: 0;
+    float: left;
+    border: 2px dotted black;
+    width: 100%;
   }
 
   .footer-links a {
@@ -648,19 +657,50 @@ img {
   }
 
   .footer-links ul {
-     margin: 0 26%;
+     margin: 0;
+     padding: 0;
   }
 
   .footer-links li {
     float: left;
-    padding-left: 5%;
-    /* border: 2px solid coral; */
+    padding-left: 15%;
   }
+
+  .stay-updated-section h2 {
+    margin-top: 5%;
+    font-size: 2.7rem;
+  }
+
+  .stay-updated-section p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: -2.5%;
+    margin-bottom: 2%;
+    padding: 0;
+  }
+
+  .stay-updated-section button {
+    color: #ffffff;
+    padding: 1%;
+    width: 20%;
+    margin: 3% 26%;
+    margin-bottom:0;  
+  }
+
+  input {
+    width: 66%;
+    padding: 1.5%;
+}
 
   .contact-section h3 {
     text-align: center;
+    margin-top: -27px;
   }
-
+  .contact-section h3 {
+    text-align: center;
+    margin-top: -27px;
+    padding-bottom: 0;
+  }
   .contact-section p {
     text-align: center;
     color: #ffffff;
@@ -668,19 +708,46 @@ img {
 
 }
 
-@media only screen and (max-width: 970px) {
-  
+
+@media only screen and (max-width: 1065px) {
   .header-title h1 {
     text-align: right;
     color: #ffff;
     line-height: 3rem;
     font-size: 2.2rem;
   }
+
+  .hand-crafted-image {
+    width: 100%;
+    height: 50%;
+    float: left;
+  }
+
+  .section-content {
+    width: 100%;
+    float: left;
+    height: 30vh;
+    border: 2px solid coral;
+    margin: 0;
+  }
+
+  .section1 h2 {
+    font-size: 1.6rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 
 @media only screen and (max-width: 940px) {
   .section-content {
     height: 35vh;
+  }
+
+  .section1 h2 {
+    font-size: 1.6rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
   }
   
   .section3 i {
@@ -701,7 +768,6 @@ img {
   .fall-trends-container {
     width: 100%;
     height: 60vh;
-    /* position: absolute; */
   }
 
   .fall-trends-image-container {
@@ -772,13 +838,11 @@ img {
     position: relative;
     margin-top: 80%;  
   }
-  
 }
 
-
-
 @media only screen and (max-width: 754px) {
-.section1-icons {
+
+.section1-icons, nav {
     display: none;
   }
   header-container {
@@ -789,10 +853,10 @@ img {
     width: 40%;
     border: 2px solid coral;
     font-family: 'Petit Formal Script', cursive;
-    padding-top: 5%;
+    padding-top: 11%;
     position: relative;
-    left: 74px;
-    width: 92%;
+    left: 9px;
+    width: 104%;
   }
 
   .header-title h1 {
@@ -812,5 +876,119 @@ img {
     height: 85%;
     margin-left: -38%;
   }
+
+  .vegan-leather-container p {
+    color: #ffffff;
+    margin: 5% 10% 0 0;
+    margin-bottom: 0px;
+    margin-bottom: 2%;
+    font-weight: 300;
+    line-height: 1.45;
+  }
+  
+}
+@media only screen and (max-width: 584px) {
+
+  .vegan-leather-container h2 {
+    margin-top: 11%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .vegan-leather-container p {
+    font-size: 1rem;
+    padding-top: 5%;
+  }
+
+  .fall-trends-container h2 {
+    margin-top: 11%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .vegan-leather-container p {
+    font-size: 1rem;
+    padding-top: 5%;
+  }
+
+  .section6 {
+    background: #500801;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    margin-top: 100%;
+  }
 }
 
+@media only screen and (max-width: 465px) {
+  .image2 {
+    display: none;
+  }
+  .header-title h1 {
+    text-align: right;
+    color: #ffff;
+    line-height: 4.3rem;
+    font-size: 2.5rem;
+  }
+  .section6 {
+
+    background: #500801;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    margin-top: 80%;
+  }
+
+  .section-content {
+    height: 50vh;
+  }
+
+  .section2 h2 {
+    text-align: center;
+    margin: 11% 0;
+    font-size: 1.5rem;
+  }
+
+  .section2-image-container ul {
+    padding-bottom: 10%;
+  }
+
+  .section2-image-container li {
+    width: calc((100% / 2) - 2%);
+    float: right;
+    margin: 1%;
+    list-style-type: none;
+  }
+
+  .section3 i {
+    width: 100%;
+    float: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .vegan-leather-container h2,
+  .fall-trends-image-container h2 {
+    margin-top: 11%;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .section6 {
+    background: #500801;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    margin-top: 100%;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .section6 {
+    background: #500801;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    margin-top: 130%;
+  }
+}
